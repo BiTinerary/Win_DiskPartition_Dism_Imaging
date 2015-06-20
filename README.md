@@ -10,3 +10,4 @@ Disk 0 will be overwritten.
 2: `DiskPart.txt` >> Formats Disk 0 into all standard Windows OS partitions. Preps drive for imaging.<br>
 3: `RunMe.bat` >> `Dism` command >> Writes `fake.wim`, within the same directory as RunMe script, to drive **C:\**
 as assigned in `Diskpart.txt`
+4: `bcdboot` >> command finalizes the drive and allows the OS to be bootable.
