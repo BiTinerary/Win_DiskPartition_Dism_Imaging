@@ -1,12 +1,12 @@
 select disk 0
 clean
-create partition primary size=3000 id=27
-format quick fs=ntfs label="Recovery"
-assign letter="R"
 create partition primary size=300
 format quick fs=ntfs label="System"
 assign letter="S"
 active
+create partition primary size=10000 id=27
+format quick fs=ntfs label="Recovery"
+assign letter="R"
 create partition primary
 format quick fs=ntfs label="Windows"
 assign letter="C"
